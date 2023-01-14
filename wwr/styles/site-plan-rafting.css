@@ -5,12 +5,12 @@ Fonts are separated by a & */
 
 @font-face {
     font-family: Newtype;
-    src: url("/wwr/styles/newtype.otf") format("opentype");
+    src: url("https://tyrpak.github.io/WD130/wwr/styles/newtype.otf") format("opentype");
 }
 
 @font-face {
     font-family: Roboto;
-    src: url("/wwr/styles/roboto.ttf") format("truetype");
+    src: url("https://tyrpak.github.io/WD130/wwr/styles/roboto.ttf") format("truetype");
 }
 
 :root {
