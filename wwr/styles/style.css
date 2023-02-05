@@ -1,10 +1,37 @@
-body {background-color: #ED8B00; color: #252532; margin: 0;}
+@font-face {
+    font-family: Newtype;
+    src: url("https://tyrpak.github.io/WD130/wwr/styles/newtype.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("https://tyrpak.github.io/WD130/wwr/styles/roboto.ttf") format("truetype");
+}
+
+
+
+
+body {
+        background-color: #ED8B00; 
+        color: #252532; 
+        margin: 0;
+        padding: 0;
+        font-family: Roboto, Helvetica, sans-serif;
+    }
+
 a {text-decoration: none;}
+
+h1, h2, h3, h4, h5, h6 { font-family: Newtype, Helvetica, sans-serif;}
+
+h2 {margin: 0;}
+
 
 header {background-color: #252532;}
 
+.icon {padding-top: 10px;}
+#logo_link {padding-top: 5px;}
 
-nav a {text-align: center; color: #ED8B00; margin: 0 10px;}
+nav a {text-align: center; color: #ED8B00; /*margin: 0 10px;*/ padding: 35px;}
 nav a:hover {background-color: #ED8B00; color: #252532;}
 
 div#content {max-width: 1600px; margin: 0 auto;}
@@ -14,24 +41,63 @@ div#hero, main {background-color: #FBFFFE;}
 #hero img {width: 100%;}
 
 #hero-msg h1, #hero-msg h4 {text-align: center;}
+
+section#hero-msg {padding-bottom: 20px;}
+
 .button-box {text-align: center; padding: 10px;}
 main section {text-align: center;}
 
+.home-title {
+                font-size: 2em;
+                margin-top: 10px;
+            }
 
-.book {background-color: #ED8B00; color: #252532; padding: 10px; }
+.book, .join {
+                font-size: 18px;
+                padding: 15px 30px;
+                margin-top: 50px;
+                border-radius: 5px;
+            }
+
+.book {background-color: #ED8B00; color: #252532;}
 .book:hover {background-color: #252532; color: #FBFFFE;}
 
-.join {background-color: #252532; color: #FBFFFE; padding: 10px;}
+.join {background-color: #252532; color: #FBFFFE;}
 .join:hover {background-color: #252532; color: #ED8B00; }
 
-.msg {background-color: #ED8B00;}
+.msg {
+        background-color: #ED8B00; 
+        line-height: 1.5em;
+        padding: 35px;
+    }
+
+.msg p {
+        font-size: .8em;
+        padding-bottom: 15px;
+    }
 
 .icon {width: 80px;}
 
 #background {height: 725px; background-color: #ED8B00;}
 
-footer {background-color: #252532;}
+.rivers-card, .camping-card, .rapids-card {margin: 200px 0;}
+
+.card-img {border: 10px solid #252532;}
+
+img.mountains {margin-bottom: -5px;}
+
+main section img {
+    box-sizing: border-box;
+}
+
+footer {
+            background-color: #252532;
+            padding: 25px 50px;
+            margin-top: 200px;
+        }
 
 footer p {font-size: 1.2em;}  
 footer a {color: #ED8B00; margin-left: 10px;}
 footer a:hover {color: #FBFFFE;}
+
+footer .social img {padding-top: 15px;}
