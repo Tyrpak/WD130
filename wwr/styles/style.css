@@ -33,6 +33,14 @@ header {
         }
 
 .icon {padding-top: 10px;}
+
+img.logo {
+    z-index: 2;
+    position: relative;
+    margin: -5px -75px -50px 0px;
+}
+
+
 #logo_link {
             padding-top: 5px;
             justify-self: center;
@@ -68,19 +76,18 @@ div#hero, main {background-color: #FBFFFE;}
 #hero-msg {
     grid-column: 2/3;
     grid-row: 1/2;
-    margin-top: 100px;
+    margin-top: 450px;
 }
 
 #hero-box {
     grid-column: 1/4;
     grid-row: 1/3;
-    z-index: -1;
+    /*z-index: -1;*/
 }
 
-#hero-msg h1, #hero-msg h4 {text-align: center;}
-
-#hero-msg h4 {
-    color: white;
+#hero-msg h1, #hero-msg h4 {
+    text-align: center;
+    color: #FBFFFE;
 }
 
 section#hero-msg {padding-bottom: 20px;}
@@ -119,9 +126,7 @@ main section {text-align: center;}
 
 .icon {width: 80px;}
 
-
-
-.rivers-card, .camping-card, .rapids-card {margin: 200px 0;}
+.rivers-card, .camping-card, .rapids-card {margin: 50px 0;}
 
 .card-img {
         border: 10px solid #252532;
@@ -202,3 +207,45 @@ footer a {color: #ED8B00; margin-left: 10px;}
 footer a:hover {color: #FBFFFE;}
 
 footer .social img {padding-top: 15px;}
+
+@media screen and (max-width: 900px) {
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero {
+        margin-top: 0;
+    }
+    #hero-msg {
+        margin-top: 0;
+    }
+    #hero-msg h4 {
+        display: none;
+    }
+    .home-title {
+        font-size: 25px;
+        color: #6f7364;
+    }
+    .rivers-card, .camping-card, .rapids-card { 
+        margin: 50px auto;
+        width: 60%;
+    }
+    #background {
+        display: none;
+    }
+    .mountains, .msg {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    footer {
+        margin-top: 25px;
+    }
+}
