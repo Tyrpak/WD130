@@ -117,6 +117,10 @@ p.colored {
   color: var(--paragraph-color-on-color);
 }
 
+#content p {
+  text-align: justify;
+}
+
 nav {
   background-color: var(--nav-background-color);
   line-height: 3em;
