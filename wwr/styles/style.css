@@ -58,7 +58,7 @@ nav.active a {background-color: #ED8B00; color: #252532;}
 
 div#content {max-width: 1600px; margin: 0 auto;}
 
-.home-grid {
+.home-grid, .page2-grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 
