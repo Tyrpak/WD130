@@ -54,6 +54,7 @@ nav {
 
 nav a {text-align: center; color: #ED8B00; /*margin: 0 10px;*/ padding: 35px;}
 nav a:hover {background-color: #ED8B00; color: #252532;}
+nav.active a {background-color: #ED8B00; color: #252532;}
 
 div#content {max-width: 1600px; margin: 0 auto;}
 
@@ -139,7 +140,7 @@ main section {text-align: center;}
         transform: scale(1.1);
     }
 
-.card-img, .mountains {     width: 100%; }
+.card-img, .mountains, .salmon {     width: 100%; }
 
 .rivers-card {
         grid-column: 2/4;
@@ -156,30 +157,34 @@ main section {text-align: center;}
     grid-row: 2/3;
 }
 
-#background {
+.background {
     height: 725px; 
     background-color: #ED8B00;
     grid-column: 1/11;
     grid-row: 4/9;
  }
 
- .mountains {
-    grid-column: 2/7;
-    grid-row: 5/8;
-}
+ .background-salmon {
+    height: 725px; 
+    background-color: #ED8B00;
+    grid-column: 1/11;
+    grid-row: 1/5;
+ }
 
-.msg {
-    grid-column: 6/10;
-    grid-row: 6/7;
-}
+ .background-desolation {
+    height: 725px; 
+    background-color: #FBFFFE;
+    grid-column: 1/11;
+    grid-row: 6/10;
+ }
 
-.msg {
-    background-color: #252532;
-    padding: 35px;
-    grid-column: 6/10;
-    grid-row: 6/7;
-    box-shadow: 5px 5px 10px #252532;
-}
+ .background-grand {
+    height: 725px; 
+    background-color: #ED8B00;
+    grid-column: 1/11;
+    grid-row: 11/15;
+ }
+
 .mountains {
     width: 100%;
     grid-column: 2/7;
@@ -187,7 +192,54 @@ main section {text-align: center;}
     box-shadow: 5px 5px 10px #252532;
 }
 
-img.mountains {margin-bottom: -5px;}
+.salmon {
+    width: 100%;
+    grid-column: 2/7;
+    grid-row: 2/5;
+    box-shadow: 5px 5px 10px #252532;
+}
+
+.desolation {
+    width: 100%;
+    grid-column: 5/10;
+    grid-row: 7/10;
+    box-shadow: 5px 5px 10px #252532;
+}
+
+.grand {
+    width: 100%;
+    grid-column: 2/7;
+    grid-row: 12/15;
+    box-shadow: 5px 5px 10px #252532;
+}
+
+img.mountains, img.salmon, img.desolation, img.grand {margin-bottom: -5px;}
+
+.msg, .msg-salmon, .msg-grand {
+    background-color: #252532;
+    padding: 35px;
+    grid-column: 6/10;
+    grid-row: 6/7;
+    box-shadow: 5px 5px 10px #252532;
+}
+
+.msg-salmon {
+    grid-column: 6/10;
+    grid-row: 2/3;
+}
+
+.msg-desolation {
+    background-color: #ED8B00;
+    padding: 35px;
+    grid-column: 1/5;
+    grid-row: 6/7;
+    box-shadow: 5px 5px 10px #ED8B00;
+}
+
+.msg-grand {
+    grid-column: 6/10;
+    grid-row: 12/13;
+}
 
 main section img {
     box-sizing: border-box;
@@ -237,8 +289,8 @@ footer .social img {padding-top: 15px;}
         margin: 50px auto;
         width: 60%;
     }
-    #background {
-        display: none;
+    .background {
+        background-color: #FBFFFE;
     }
     .mountains, .msg {
         width: 80%;
