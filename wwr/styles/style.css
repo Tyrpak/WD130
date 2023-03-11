@@ -293,6 +293,100 @@ footer a:hover {color: #FBFFFE;}
 
 footer .social img {padding-top: 15px;}
 
+/* contactus.html */
+
+form#contact-us {
+    grid-column: 3/9;
+    grid-row: 2/3;
+
+    /* Center the form on the page */
+    margin: 30px auto;
+    width: 400px;
+    /* Form outline */
+    padding: 1em;
+    border: 1px solid #FBFFFE;
+    border-radius: 1em;
+    background-color: #252532; color: #FBFFFE;
+  }
+  
+ #contact-us ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+#contact-us form li + li {
+    margin-top: 1em;
+  }
+  
+#contact-us label {
+    /* Uniform size & alignment */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+  }
+  
+#contact-us input, #contact-us textarea {
+    /* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+    /*font: 1em sans-serif;*/
+  
+    /* Uniform text field size */
+    width: 300px;
+    box-sizing: border-box;
+  
+    /* Match form field borders */
+    border: 1px solid #252532;
+  }
+  
+#contact-us input:focus, #contact-us textarea:focus {
+    /* Additional highlight for focused elements */
+    border-color: #ED8B00;
+  }
+  
+#contact-us textarea {
+    /* Align multiline text fields with their labels */
+    vertical-align: top;
+  
+    /* Provide space to type some text */
+    height: 5em;
+
+    font-family: Roboto, Helvetica, sans-serif;
+    color: #252532;
+  }
+  
+#contact-us .button {
+    /* Align buttons with the text fields */
+    padding-left: 90px; /* same size as the label elements */
+    margin: 10px 0;
+    text-align: center;
+  }
+  
+#contact-us button {
+    /* This extra margin represent roughly the same space as the space
+       between the labels and their text fields */
+    margin-left: 0.5em;
+    background-color: #ED8B00; color: #252532;
+  }
+
+#contact-us button:hover {
+    background-color: #ED8B00; color: #FBFFFE;
+  }
+
+#feedback {
+    grid-column: 3/9;
+    grid-row: 4/5;
+
+    background-color: antiquewhite;
+    text-align: center;
+    padding: .5em;
+    /* make this element invisible until we are ready for it */
+    display: none;      
+}
+.moveDown {
+    margin-top: 3em;
+}
+
 @media screen and (max-width: 900px) {
     #hero, .home-grid, .page2-grid {
         display: block;
