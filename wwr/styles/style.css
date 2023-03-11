@@ -367,6 +367,9 @@ form#contact-us {
        between the labels and their text fields */
     margin-left: 0.5em;
     background-color: #ED8B00; color: #252532;
+    font-size: 18px;
+    padding: 15px 30px;
+    border-radius: 5px;
   }
 
 #contact-us button:hover {
