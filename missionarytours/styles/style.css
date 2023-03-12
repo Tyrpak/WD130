@@ -192,19 +192,19 @@ main {
     padding: 30px;
 }
 
-#main-route {
+.main-route {
     grid-column: 2/2;
 }
 
-#main-route-pic {
+.main-route-pic {
     grid-column: 3/3;
 }
 
-#main-route-pic img {
+.main-route-pic img {
     width: 50%;
 }
 
-div#main-route:hover + #main-route-pic img, #main-route-pic img:hover {
+div.main-route:hover + .main-route-pic img, .main-route-pic img:hover {
     transition: transform .5s;
     width: 100%;
 }
