@@ -64,6 +64,7 @@ header {
         position: fixed; 
         top: 0; 
         width: 100%;
+        max-width: 1250px;
     }
 
 
@@ -100,7 +101,7 @@ nav a {
 nav a:hover {background-color: #5271FF; color: #FFFFF0;}
 nav a.active {background-color: #5271FF; color: #201335;}
 
-div#content {max-width: 1600px; margin: 0 auto;}
+div#content {max-width: 1250px; margin: 0 auto;}
 
 div#hero, main {background-color: #FFFFF0;}
 
