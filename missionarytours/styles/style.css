@@ -59,33 +59,42 @@ h4 {font-size: 1.5em;}
 header {
         background-color: #FFFFF0;
         display: grid;
-        grid-template-columns: 150px auto;
+        grid-template-columns: 325px auto;
+        /*overflow: hidden;*/
+        position: fixed; 
+        top: 0; 
+        width: 100%;
     }
+
+
+
 
 .icon {padding-top: 10px;}
 
 img.logo {
 z-index: 2;
 position: relative;
-margin: -5px -75px -50px 0px;
+margin-bottom: -200px;
+width: 325px;
+top: -55px;
 }
 
 
-#logo_link {
+/*#logo_link {
         padding-top: 5px;
         justify-self: center;
         align-self: center;
-    }
+    }*/
 
 nav {
 display: flex;
-justify-content: space-around;
+/*justify-content: space-around;*/
 }
 
 nav a {
     text-align: center; color: #5271FF; 
     /*margin: 0 10px;*/ 
-    padding: 35px;
+    padding: 15px;
     font-size: 1.2em;
 }
 nav a:hover {background-color: #5271FF; color: #FFFFF0;}
@@ -141,11 +150,26 @@ main {
 
 }
 
-#main-top {
+#static-map {
     grid-column: 1/4;
     grid-row: 1/1;
     margin-top: 30px;
 }
+
+#static-map img {
+    transform: rotate(270deg);
+}
+
+#main-top {
+    grid-column: 1/4;
+    grid-row: 1/1;
+}
+
+#tour-top {
+    grid-column: 1/4;
+    grid-row: 2/2;
+}
+
 
 #main-tour-1 {
     grid-column: 2/2;
@@ -329,6 +353,7 @@ footer .social img {padding-top: 15px;}
 img.logo {
     width: 100%;
     margin: 0px;
+    top: 0px;
     }
 
 nav, footer {
@@ -361,6 +386,13 @@ nav a {
     display: block;
     margin: 0 auto;
 }
+
+#main-map-1 a:hover, #main-map-2 a:hover {
+    transition: none;
+    opacity: 1;
+}
+
+
 footer {
     margin-top: 25px;
 }
