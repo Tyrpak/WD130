@@ -65,6 +65,7 @@ header {
         top: 0; 
         width: 100%;
         max-width: 1250px;
+        z-index: 2;
     }
 
 
@@ -73,7 +74,7 @@ header {
 .icon {padding-top: 10px;}
 
 img.logo {
-z-index: 2;
+z-index: 3;
 position: relative;
 margin-bottom: -200px;
 width: 325px;
@@ -105,19 +106,15 @@ div#content {max-width: 1250px; margin: 0 auto;}
 
 div#hero, main {background-color: #FFFFF0;}
 
-#hero {
+#hero, #map {
 display: grid;
 grid-template-columns: 1fr 3fr 1fr;
+}
+#hero {
 margin-top: -100px;
 }
 
-#hero img {width: 100%;}
-
-#hero-msg {
-grid-column: 2/3;
-grid-row: 1/2;
-margin-top: 250px;
-}
+#hero img, #map img {width: 100%;}
 
 #hero-box {
 grid-column: 1/4;
@@ -126,12 +123,34 @@ grid-row: 1/3;
 margin-bottom: -4px;
 }
 
-#hero-msg h1, #hero-msg h4 {
+#hero-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 250px;
+}
+
+#map-box {
+    grid-column: 1/4;
+    grid-row: 1/1;
+    /*z-index: -1;*/
+    margin-bottom: -4px;
+    position: fixed;
+    top: 53px;
+}
+
+#map-msg {
+    grid-column: 2/3;
+    grid-row: 2/2;
+}
+
+#hero-msg h1, #hero-msg h4, #map-msg h1, #map-msg h4 {
 text-align: center;
 color: #FFFFF0;
 }
 
 section#hero-msg {padding-bottom: 20px;}
+
+section#map-msg {margin-top: 353px;}
 
 .button-box {text-align: center; padding: 10px;}
 main section {text-align: center;}
@@ -165,12 +184,6 @@ main {
     grid-column: 1/4;
     grid-row: 1/1;
 }
-
-#tour-top {
-    grid-column: 1/4;
-    grid-row: 2/2;
-}
-
 
 #main-tour-1 {
     grid-column: 2/2;
@@ -346,13 +359,18 @@ footer a:hover, footer a.active {color: #FFFFF0;}
 footer .social img {padding-top: 15px;}
 
 @media screen and (max-width: 900px) {
-#hero, .main-grid {
+
+#hero, #map .main-grid {
     display: block;
     height: auto;
 }
 
+header {
+    grid-template-columns: 325px auto;
+}
+
 img.logo {
-    width: 100%;
+    width: 250px;
     margin: 0px;
     top: 0px;
     }
@@ -364,18 +382,23 @@ nav a {
     display: block;
     padding: 15px;
 }
-#hero {
+#hero, #map {
     margin-top: 0;
 }
-#hero-msg {
+
+#map-box {
+    top: 159px;
+}
+
+#hero-msg, #map-msg {
     margin-top: -100px;
 }
-#hero-msg h4 {
+#hero-msg h4, #map-msg h4 {
     display: none;
 }
 .home-title {
     font-size: 25px;
-    color: #6f7364;
+    color: #201335;
 }
 
 .background {
