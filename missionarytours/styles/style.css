@@ -145,6 +145,17 @@ margin-bottom: -4px;
     grid-row: 2/2;
 }
 
+div#invisible-area {display: none;}
+
+#tooltip {
+    display: inline-block;
+    padding: 0px;
+    background: rgba(0,0,0,.5);
+    color: white;
+    position: absolute;
+    display: none;
+  }
+
 #hero-msg h1, #hero-msg h4, #map-msg h1, #map-msg h4 {
 text-align: center;
 color: #FFFFF0;
@@ -256,10 +267,6 @@ div.main-route:hover + .main-route-pic img, .main-route-pic img:hover {
 .main-route p:first-of-type {
     margin: 0px;
 }
-
-
-
-
 
 .book, .join {
             font-size: 18px;

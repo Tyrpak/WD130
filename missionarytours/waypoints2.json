@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Batthyány tér",
+        "top": 260,
+        "left": 50
+    },
+    {
+        "title": "Margit-híd",
+        "top": 240,
+        "left": 50
+    },
+    {
+        "title": "Dunapart",
+        "top": 235,
+        "left": 300
+    },
+    {
+        "title": "Bazilika",
+        "top": 150,
+        "left": 420
+    },
+    {
+        "title": "Dunapart #2",
+        "top": 205,
+        "left": 520
+    },
+    {
+        "title": "Zikkurat",
+        "top": 30,
+        "left": 1100
+    }
+]
