@@ -150,10 +150,13 @@ div#invisible-area {display: none;}
 #tooltip {
     display: inline-block;
     padding: 0px;
-    background: rgba(0,0,0,.5);
+    background: #df1010;
     color: white;
     position: absolute;
     display: none;
+    top: 200px;
+    left: 0px;
+    padding: 5px;
   }
 
 #hero-msg h1, #hero-msg h4, #map-msg h1, #map-msg h4 {
